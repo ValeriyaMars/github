@@ -1,6 +1,5 @@
 package github.tests;
 
-
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -14,5 +13,4 @@ public class DragAndDropTest {
         $("#column-a").dragAndDropTo("#column-b");
         $("#column-b").shouldHave(text("A"));
     }
-
 }
